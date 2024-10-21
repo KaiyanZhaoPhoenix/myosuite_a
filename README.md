@@ -1,44 +1,22 @@
-<!-- =================================================
-# Copyright (c) Facebook, Inc. and its affiliates
-Authors  :: Vikash Kumar (vikashplus@gmail.com), Vittorio Caggiano (caggiano@gmail.com)
-================================================= -->
-<img src="https://github.com/myohub/myosuite/blob/main/docs/source/images/Full%20Color%20Horizontal%20wider.png?raw=true" width=800>
-
-[![Support Ukraine](https://img.shields.io/badge/Support-Ukraine-FFD500?style=flat&labelColor=005BBB)](https://opensource.facebook.com/support-ukraine)
-[![PyPI](https://img.shields.io/pypi/v/myosuite)](https://pypi.org/project/MyoSuite/)
-[![Documentation Status](https://readthedocs.org/projects/myosuite/badge/?version=latest)](https://myosuite.readthedocs.io/en/latest/)
-![PyPI - License](https://img.shields.io/pypi/l/myosuite)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/myohub/myosuite/blob/main/docs/CONTRIBUTING.md)
-[![Downloads](https://static.pepy.tech/badge/myosuite)](https://pepy.tech/project/myosuite)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zFuNLsrmx42vT4oV8RbnEWtkSJ1xajEo)
-[![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/myosuite/shared_invite/zt-1zkpw2zzk-NhVhVlSDxhoMHbzROD8gMA)
-[![Twitter Follow](https://img.shields.io/twitter/follow/MyoSuite?style=social)](https://twitter.com/MyoSuite)
-
-`MyoSuite` is a collection of musculoskeletal environments and tasks simulated with the [MuJoCo](http://www.mujoco.org/) physics engine and wrapped in the OpenAI ``gym`` API to enable the application of Machine Learning to bio-mechanic control problems.
-
-
-
-[Documentation](https://myosuite.readthedocs.io/en/latest/) | [Tutorials](https://github.com/myohub/myosuite/tree/main/docs/source/tutorials) | [Task specifications](https://github.com/myohub/myosuite/blob/main/docs/source/suite.rst#tasks)
-
-
-Below is an overview of the tasks in the MyoSuite.
-
-<img width="1240" alt="TasksALL" src="https://github.com/myohub/myosuite/blob/main/docs/source/images/myoSuite_All.png?raw=true">
-
-
 
 ## Installations
 You will need Python 3.8 or later versions.
 
 It is recommended to use [Miniconda](https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links) and to create a separate environment with:
 ``` bash
-conda create --name myosuite python=3.8
-conda activate myosuite
+conda create --name MyoSuite python=3.8
+conda activate MyoSuite
+pip install -U myosuite
+pip install stable_baseline3
 ```
 
-It is possible to install MyoSuite with:
+It is possible to install MyoSuite from source:
 ``` bash
-pip install -U myosuite
+conda create --name MyoSuite python=3.8
+conda activate MyoSuite
+git clone https://github.com/KaiyanZhaoPhoenix/myosuite_a.git
+pip install -e .
+pip install stable_baseline3
 ```
 for advanced installation, see [here](https://myosuite.readthedocs.io/en/latest/install.html#alternative-installing-from-source).
 
